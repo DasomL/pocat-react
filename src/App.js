@@ -6,6 +6,7 @@ import Join from "./routes/join";
 import Login from "./routes/login";
 import JoinSuccess from "./routes/joinsuccess";
 import AddCat from "./routes/addcat";
+import Dashboard from "./routes/dashboard";
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -15,12 +16,6 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 class App extends Component {
-  status = {
-    nickname: "",
-    email: "",
-    password: ""
-  };
-
   render() {
     return (
       <>
@@ -31,6 +26,7 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/joinsuccess" component={JoinSuccess} />
           <Route path="/addcat" component={AddCat} />
+          <Route path="/dashboard" component={Dashboard} />
         </Router>
       </>
     );
