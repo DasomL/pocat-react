@@ -5,6 +5,7 @@ import Home from "./routes/home";
 import Join from "./routes/join";
 import Login from "./routes/login";
 import JoinSuccess from "./routes/joinsuccess";
+import AddCat from "./routes/addcat";
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -29,6 +30,7 @@ class App extends Component {
           <Route path="/join" component={Join} />
           <Route path="/login" component={Login} />
           <Route path="/joinsuccess" component={JoinSuccess} />
+          <Route path="/addcat" component={AddCat} />
         </Router>
       </>
     );

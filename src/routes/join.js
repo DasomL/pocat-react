@@ -56,6 +56,14 @@ const Input = styled.input`
   padding-right: 25px;
 `;
 
+const Label = styled.label`
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: #cacaca;
+  padding-left: 25px;
+`;
+
 const SmallNotice = styled.div`
   width: 350px;
   height: 28px;
@@ -66,14 +74,6 @@ const SmallNotice = styled.div`
   text-align: center;
   color: #cacaca;
   margin-bottom: 25px;
-`;
-
-const Label = styled.label`
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  color: #cacaca;
-  padding-left: 25px;
 `;
 
 const Button = styled.button`
@@ -112,7 +112,6 @@ export class Join extends Component {
   };
 
   render() {
-    // const { nickname, email, password } = this.state;
     return (
       <>
         <Container>
@@ -122,10 +121,7 @@ export class Join extends Component {
           <Form>
             <InputBox>
               <Label>닉네임</Label>
-              <Input
-              // name="nickname"
-              // value={nickname}
-              />
+              <Input />
             </InputBox>
             <InputBox>
               <Label>이메일</Label>
