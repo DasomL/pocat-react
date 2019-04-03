@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
@@ -41,11 +41,6 @@ const SubText = styled.h3`
   margin-bottom: 44px;
 `;
 
-const ContainerButton = styled.div`
-  width: 280px;
-  margin: auto;
-`;
-
 const Button = styled.button`
   background-color: ${props => (props.primary ? "#5aa3ff" : "#ffffff")};
   color: ${props => (props.primary ? "#ffffff" : "#5aa3ff")};
@@ -73,7 +68,7 @@ const Button = styled.button`
   }
 `;
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
       <>
@@ -85,16 +80,16 @@ class App extends Component {
             <br />
             건강기록 서비스입니다
           </SubText>
-          <ContainerButton>
+          <Link to="/login">
             <Button primary>로그인</Button>
-            <Link to="/join">
-              <Button>회원가입</Button>
-            </Link>
-          </ContainerButton>
+          </Link>
+          <Link to="/join">
+            <Button>회원가입</Button>
+          </Link>
         </Container>
       </>
     );
   }
 }
 
-export default App;
+export default Home;

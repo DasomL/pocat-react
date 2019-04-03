@@ -56,15 +56,15 @@ const Input = styled.input`
   padding-right: 25px;
 `;
 
-const SmallNotice = styled.div`
+const FindPw = styled.div`
   width: 350px;
   height: 28px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 15px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.5px;
   text-align: center;
-  color: #cacaca;
+  color: #5aa3ff;
   margin-bottom: 25px;
 `;
 
@@ -104,15 +104,14 @@ const Button = styled.button`
   }
 `;
 
-export class Join extends Component {
+export class Login extends Component {
   status = {
-    nickname: "",
     email: "",
     password: ""
   };
 
   render() {
-    // const { nickname, email, password } = this.state;
+    // const { email, password } = this.state;
     return (
       <>
         <Container>
@@ -120,13 +119,6 @@ export class Join extends Component {
             <Logo>POCAT</Logo>
           </Link>
           <Form>
-            <InputBox>
-              <Label>닉네임</Label>
-              <Input
-              // name="nickname"
-              // value={nickname}
-              />
-            </InputBox>
             <InputBox>
               <Label>이메일</Label>
               <Input />
@@ -136,20 +128,14 @@ export class Join extends Component {
               <Input type="password" />
             </InputBox>
 
-            <SmallNotice>
-              회원가입시 이용약관, 개인정보취급방침을 읽고 이해하셨으며
-              <br />
-              해당 내용에 동의하신 것이 됩니다.
-            </SmallNotice>
-            <Link to="/joinsuccess">
-              <Button primary>이메일로 가입하기</Button>
-            </Link>
+            <FindPw>비밀번호를 잊어버리셨나요?</FindPw>
+            <Button primary>로그인</Button>
           </Form>
-          <Button>네이버로 가입하기</Button>
+          <Button>네이버 아이디로 로그인</Button>
         </Container>
       </>
     );
   }
 }
 
-export default Join;
+export default Login;
