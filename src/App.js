@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { createGlobalStyle } from "styled-components";
 import Header from "../src/components/Header";
+import Main from "../src/components/Main";
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -15,6 +16,7 @@ class App extends Component {
       <>
         <GlobalStyle />
         <Header />
+        <Main />
       </>
     );
   }
