@@ -130,8 +130,8 @@ export class Login extends Component {
 
             <FindPw>비밀번호를 잊어버리셨나요?</FindPw>
             <Button primary>로그인</Button>
+            <Button>회원가입</Button>
           </Form>
-          <Button>네이버 아이디로 로그인</Button>
         </Container>
       </>
     );

@@ -83,9 +83,6 @@ class Home extends Component {
           <Link to="/login">
             <Button primary>로그인</Button>
           </Link>
-          <Link to="/join">
-            <Button>회원가입</Button>
-          </Link>
         </Container>
       </>
     );
