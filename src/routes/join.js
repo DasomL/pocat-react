@@ -141,7 +141,6 @@ export class Join extends Component {
               <Button primary>이메일로 가입하기</Button>
             </Link>
           </Form>
-          <Button>네이버로 가입하기</Button>
         </Container>
       </>
     );
