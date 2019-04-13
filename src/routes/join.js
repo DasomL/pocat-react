@@ -38,7 +38,7 @@ const InputBox = styled.div`
   width: 350px;
   height: 50px;
   border-radius: 5px;
-  border: solid 1px #f5f5f5;
+  border: solid 1px #dcdcdc;
 
   margin-bottom: 15px;
 `;
@@ -47,7 +47,7 @@ const Input = styled.input`
   width: 210px;
   height: 19px;
   font-size: 16px;
-  border: solid 0px #f5f5f5;
+  border: solid 0px #dcdcdc;
   color: #000000;
   &:active,
   &:focus {
@@ -60,7 +60,7 @@ const Label = styled.label`
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.5px;
-  color: #cacaca;
+  color: #c8c8c8;
   padding-left: 25px;
 `;
 
@@ -72,7 +72,7 @@ const SmallNotice = styled.div`
   line-height: 15px;
   letter-spacing: -0.4px;
   text-align: center;
-  color: #cacaca;
+  color: #c8c8c8;
   margin-bottom: 25px;
 `;
 

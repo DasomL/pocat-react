@@ -38,7 +38,7 @@ const InputBox = styled.div`
   width: 350px;
   height: 50px;
   border-radius: 5px;
-  border: solid 1px #f5f5f5;
+  border: solid 1px #dcdcdc;
 
   margin-bottom: 15px;
 `;
@@ -47,7 +47,7 @@ const Input = styled.input`
   width: 210px;
   height: 19px;
   font-size: 16px;
-  border: solid 0px #f5f5f5;
+  border: solid 0px #dcdcdc;
   color: #000000;
   &:active,
   &:focus {
@@ -72,7 +72,7 @@ const Label = styled.label`
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.5px;
-  color: #cacaca;
+  color: #c8c8c8;
   padding-left: 25px;
 `;
 
@@ -81,12 +81,12 @@ const Button = styled.button`
   height: 50px;
   margin-bottom: 15px;
   border-radius: 5px;
-  color: #ffffff;
+  color: ${props => (props.primary ? "#ffffff" : "#5aa3ff")};
   transition: all 0.3s;
 
   border: ${props =>
-    props.primary ? "1px solid #5aa3ff" : "1px solid #1ec800"};
-  background-color: ${props => (props.primary ? "#5aa3ff " : "#1ec800")};
+    props.primary ? "1px solid #5aa3ff" : "1px solid #5aa3ff"};
+  background-color: ${props => (props.primary ? "#5aa3ff " : "#ffffff")};
 
   font-size: 17px;
   font-weight: 400;
@@ -129,8 +129,12 @@ export class Login extends Component {
             </InputBox>
 
             <FindPw>비밀번호를 잊어버리셨나요?</FindPw>
-            <Button primary>로그인</Button>
-            <Button>회원가입</Button>
+            <Link to="/addcat">
+              <Button primary>로그인</Button>
+            </Link>
+            <Link to="/join">
+              <Button>회원가입</Button>
+            </Link>
           </Form>
         </Container>
       </>

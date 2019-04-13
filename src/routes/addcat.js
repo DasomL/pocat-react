@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Select from "react-select";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   text-align: center;
@@ -38,7 +39,7 @@ const InputBox = styled.div`
   width: 394px;
   height: 50px;
   border-radius: 5px;
-  border: solid 1px #f5f5f5;
+  border: solid 1px #dcdcdc;
 
   margin-bottom: 10px;
 `;
@@ -47,7 +48,7 @@ const Input = styled.input`
   width: 240px;
   height: 19px;
   font-size: 16px;
-  border: solid 0px #f5f5f5;
+  border: solid 0px grey;
   color: #000000;
   &:active,
   &:focus {
@@ -61,7 +62,7 @@ const Label = styled.label`
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.5px;
-  color: #cacaca;
+  color: #c8c8c8;
   padding-left: 25px;
 `;
 
@@ -90,7 +91,6 @@ const Button = styled.button`
   font-weight: 400;
   letter-spacing: -0.5px;
 
-  -webkit-appearence: none;
   cursor: pointer;
   &:active,
   &:focus {
@@ -123,13 +123,13 @@ export class AddCat extends Component {
         ...styles,
         height: "50px",
         borderRadius: "5px",
-        border: "solid 1px #f5f5f5"
+        border: "solid 1px #dcdcdc"
       }),
       placeholder: styles => ({
         ...styles,
         fontSize: "16px",
         letterSpacing: "-0.5px",
-        color: "#cacaca"
+        color: "#c8c8c8"
       }),
       option: styles => ({
         ...styles,
@@ -209,7 +209,9 @@ export class AddCat extends Component {
               <br />
               뒷다리 길이 : 뒷다리의 무릎에서 발꿈치까지의 길이
             </SmallNotice>
-            <Button>야옹이 등록</Button>
+            <Link to="/dashboard">
+              <Button>야옹이 등록</Button>
+            </Link>
           </Form>
         </Container>
       </>

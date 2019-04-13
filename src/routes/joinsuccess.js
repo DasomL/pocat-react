@@ -28,7 +28,7 @@ const Subtext = styled.div`
   line-height: 1.43;
   letter-spacing: -0.5px;
   text-align: center;
-  color: #707070;
+  color: #969696;
   margin-bottom: 70px;
 `;
 
@@ -46,7 +46,7 @@ const EmailCheckNotice = styled.div`
   line-height: 1.36;
   letter-spacing: -0.5px;
   text-align: center;
-  color: #707070;
+  color: #969696;
   margin-bottom: 70px;
 `;
 
